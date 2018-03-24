@@ -1,14 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     defaultConfig {
         applicationId "rw.hackorient.dequeue"
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -16,12 +18,57 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    packagingOptions {
+        exclude 'META-INF/**rxjava.properties**'
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.karumi:dexter:4.2.0'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support:support-v4:27.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:cardview-v7:27.1.0'
+    implementation 'com.android.support:mediarouter-v7:27.1.0'
+    implementation 'com.google.android.gms:play-services:11.8.0'
+    implementation 'com.google.android.gms:play-services-maps:11.8.0'
+    implementation 'com.google.android.gms:play-services-location:11.8.0'
+    implementation 'com.google.android.gms:play-services-places:11.8.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.codemybrainsout.onboarding:onboarder:1.0.4'
+    implementation 'com.github.joielechong:countrycodepicker:2.1.5'
+    implementation 'com.daimajia.swipelayout:library:1.2.0@aar'
+    implementation 'com.github.stfalcon:smsverifycatcher:0.3.1'
+    implementation 'com.github.GoodieBag:Pinview:v1.3'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.android.support:palette-v7:27.1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.airbnb.android:epoxy:2.9.0'
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.10'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'com.github.GrenderG:Toasty:1.2.8'
+    implementation 'com.github.orhanobut:hawk:1.23'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.github.ar-android:DrawRouteMaps:1.0.0'
+    implementation 'com.github.jd-alexander:library:1.1.0'
+    implementation 'com.github.daniel-stoneuk:material-about-library:2.2.1'
+    implementation "com.mikepenz:iconics-core:2.8.2@aar"
+    implementation 'com.mikepenz:google-material-typeface:2.2.0.3.original@aar'
+    implementation 'com.mikepenz:community-material-typeface:1.7.22.1@aar'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
