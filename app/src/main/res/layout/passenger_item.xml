@@ -38,7 +38,7 @@
                 android:fontFamily="sans-serif-condensed"
                 android:textStyle="bold"
                 android:textSize="18sp"
-                tools:text="Student Name"
+                tools:text="Passenger Name"
                 />
 
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -56,7 +56,7 @@
                     android:fontFamily="sans-serif-condensed"
                     android:textStyle="bold"
                     android:textSize="14sp"
-                    tools:text="School Name" />
+                    tools:text="Location Name" />
                 <TextView
                     android:id="@+id/level_name"
                     android:layout_width="wrap_content"
@@ -68,7 +68,7 @@
                     android:fontFamily="sans-serif-condensed"
                     android:textStyle="italic|bold"
                     android:textSize="14sp"
-                    tools:text="Class Name" />
+                    tools:text="Level Name" />
             </RelativeLayout>
         </LinearLayout>
 
