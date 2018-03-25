@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">Dequeue</string>
+    <string name="app_name">NextBus</string>
+    <string name="title_activity_map_fragment">NextBus Driver</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="student_fragment_title">Passenger</string>
+    <string name="enter_phone">Phone</string>
+    <string name="title_activity_verify">Verify</string>
+    <string name="verify_activity_title">verify</string>
+    <string name="message_icon">message icon</string>
+    <string name="server_url">https://platform.whereismytransport.com/</string>
+    <string name="grant_type">client_credentials</string>
+    <string name="scope">transportapi:all</string>
+    <string name="facebook_client_token">not_now</string>
+    <string name="bus_stop_fragment_title">Bus stop</string>
+    <string name="bus_stop_student_title">Passenger On This</string>
+    <string name="login_title">NextBus</string>
+    <string name="pick_up_address">choose line</string>
+    <string name="title_home">Home</string>
+    <string name="clear">Clear</string>
+    //terrible ideal but it's for hackterthon --\(0)(0)/-- am gonna use it to refresh 0auth2.0 auth token
+    <string name="CLIENT_ID">a1b9d57f-dbfc-4017-97e8-ea8c7cf51c53</string>
+    <string name="CLIENT_SECRET">cke9GpiGZl1btJaCTPmhllA5p+365uWajcQ+SFZRfmk=</string>
 </resources>

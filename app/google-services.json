@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "3172412994",
+    "firebase_url": "https://hackorient-1521886926088.firebaseio.com",
+    "project_id": "hackorient-1521886926088",
+    "storage_bucket": "hackorient-1521886926088.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3172412994:android:db96f2bc8785520a",
+        "android_client_info": {
+          "package_name": "rw.hackorient.dequeue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3172412994-tshphr6s09kh30970iqc058nmcqv7tbo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfKabk9oggHWiIndNA4L0GG5ZR--T929k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

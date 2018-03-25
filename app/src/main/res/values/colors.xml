@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#f9ffe603</color>
+    <color name="colorPrimaryDark">#1de9b6</color>
+    <color name="colorAccent">#ffea00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#FFAB02</color>
+    <color name="green_accent_400">#00e676</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="statusBarHackColor">#44421C</color>
+    <color name="colorRouteLine">#1de9b6</color>
+    <color name="colorLightBar">#FFFFFF</color>
+    <color name="colorLightStatus">#9E9E9E</color>
+    <color name="hint_color">#ffffff</color>
+    <color name="hint_text_color">#BBffffff</color>
+    <color name="view">#99aba9a9</color>
+    <color name="view_hovered">#10aba9a9</color>
+    <color name="back_view">#99d2d2d2</color>
+    <color name="summary">#1e2764</color>
+    <color name="delete">#fa315b</color>
 </resources>
