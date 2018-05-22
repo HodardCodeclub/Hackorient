@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -38,13 +39,13 @@ public class PassengerProfileActivity extends AppCompatActivity {
         tvEmailLocation = findViewById(R.id.tvEmailLocation);
 
         mHackorientApi = HackorientApi.getInstance();
-        getSupportActionBar().setTitle("Name");
-        Glide.with(this).setDefaultRequestOptions(new RequestOptions().fallback(R.drawable.ic_user_profile_circle)).load("ok").apply(new RequestOptions().centerCrop()).into(passenger_profile_image);
-        tvNumberPassenger.setText("mobile");
-        tvPassengerEmail.setText("E-mail");
-        tvPassengerLocation.setText("Location");
-        tvNumberLocation.setText("Mobile");
-        tvEmailLocation.setText("Mobile");
+        getSupportActionBar().setTitle("MUCYO Fred");
+        Glide.with(this).setDefaultRequestOptions(new RequestOptions().fallback(R.drawable.ic_user_profile_circle)).load(R.drawable.miller).apply(new RequestOptions().centerCrop()).into(passenger_profile_image);
+        tvNumberPassenger.setText("+250722222222");
+        tvPassengerEmail.setText("info@email.com");
+        tvPassengerLocation.setText("Nyamirambo,Nyarugenge");
+        tvNumberLocation.setText("+250788888888");
+        tvEmailLocation.setText("info@gmail.com");
 
 
 
@@ -54,12 +55,23 @@ public class PassengerProfileActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.profile_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         switch (id){
             case android.R.id.home:
                 onBackPressed();
                 return true;
+            case R.id.home_about:
+                Intent mAIntent = new Intent(getApplicationContext(),AboutActivity.class);
+                startActivity(mAIntent);
+                return  true;
         }
         return super.onOptionsItemSelected(item);
     }

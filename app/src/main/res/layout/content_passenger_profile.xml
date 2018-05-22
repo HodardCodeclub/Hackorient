@@ -53,7 +53,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_toEndOf="@id/ivContactItem1"
                 android:layout_toRightOf="@id/ivContactItem1"
-                android:text="Parent"
+                android:text="Home"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="#727272" />
 
@@ -113,7 +113,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_toEndOf="@id/ivContactItem2"
                 android:layout_toRightOf="@id/ivContactItem2"
-                android:text="School"
+                android:text="Work"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="#727272" />
 
@@ -161,7 +161,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_toEndOf="@id/ivContactItem3"
                 android:layout_toRightOf="@id/ivContactItem3"
-                android:text="Parent"
+                android:text="Location"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="#727272" />
 
@@ -208,7 +208,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_toEndOf="@id/ivContactItem4"
                 android:layout_toRightOf="@id/ivContactItem4"
-                android:text="School"
+                android:text="E-mail"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="#727272" />
 
@@ -256,7 +256,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_toEndOf="@id/ivContactItem5"
                 android:layout_toRightOf="@id/ivContactItem5"
-                android:text="School"
+                android:text="Location"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="#727272" />
         </RelativeLayout>

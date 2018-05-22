@@ -29,7 +29,7 @@ public class HackorientApi {
 
     public static  String mToken;
     private static final String TAG = "HackorientApi";
-    private static final String SHURI_BUS_DRIVER_BASE_URL = Resources.getSystem().getString(R.string.server_url);
+    private static final String SHURI_BUS_DRIVER_BASE_URL = "https://platform.whereismytransport.com/";
 
     private static HackorientApi instance;
     private HackOrientService hackOrientService;

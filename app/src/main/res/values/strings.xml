@@ -14,10 +14,14 @@
     <string name="bus_stop_fragment_title">Bus stop</string>
     <string name="bus_stop_student_title">Passenger On This</string>
     <string name="login_title">NextBus</string>
-    <string name="pick_up_address">choose line</string>
+    <string name="pick_up_address">Choose Destination</string>
     <string name="title_home">Home</string>
     <string name="clear">Clear</string>
-    //terrible ideal but it's for hackterthon --\(0)(0)/-- am gonna use it to refresh 0auth2.0 auth token
+    //terrible ideal but it's for hackterthon --\(0)(0)/-- am gonna use it to refresh 0auth2.0 auth
+    token
     <string name="CLIENT_ID">a1b9d57f-dbfc-4017-97e8-ea8c7cf51c53</string>
     <string name="CLIENT_SECRET">cke9GpiGZl1btJaCTPmhllA5p+365uWajcQ+SFZRfmk=</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -35,7 +35,7 @@ public class PassengerActivity extends AppCompatActivity {
                 case R.id.menu_student:
                     viewPager.setCurrentItem(0);
                     break;
-                case R.id.menu_bus_stop:
+                case R.id.menu_profile:
                     viewPager.setCurrentItem(1);
             }
             return true;

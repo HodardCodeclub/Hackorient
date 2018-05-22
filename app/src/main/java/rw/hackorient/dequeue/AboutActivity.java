@@ -103,7 +103,7 @@ public class AboutActivity extends MaterialAboutActivity {
                         .sizeDp(18),
                 "Send an email",
                 true,
-                "info@shuribus.com",
+                "info@hackorient.rw",
                 "Help About Get my way"));
 
         convenienceCardBuilder.addItem(ConvenienceBuilder.createPhoneItem(c,

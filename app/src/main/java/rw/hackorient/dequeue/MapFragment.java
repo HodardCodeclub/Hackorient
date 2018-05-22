@@ -83,10 +83,7 @@ public class MapFragment extends Fragment implements
     }
 
     private void InitBusStops() {
-        if(getArguments().getParcelable("user") != null){
-            //use yo observable here!
-             //waypointsObservable = mHackorientApi.driverWayPoints();
-        }
+
     }
 
     @Override

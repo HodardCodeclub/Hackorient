@@ -2,11 +2,14 @@ package rw.hackorient.dequeue;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseUser;
 
@@ -15,7 +18,6 @@ public class Home extends AppCompatActivity {
 
     public Toolbar toolbar;
     public FirebaseUser mUser;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,28 @@ public class Home extends AppCompatActivity {
             mUser = getIntent().getParcelableExtra("user");
         }
         fragment_change(1);
+
+
+        BottomNavigationView b_nav = findViewById(R.id.navigation);
+        Helper.disableShiftMode(b_nav);
+        b_nav.setOnNavigationItemSelectedListener(item -> {
+            switch (item.getItemId()){
+
+                case R.id.home_about:
+                    fragment_change(1);
+                    break;
+                case R.id.menu_student:
+                    fragment_change(2);
+                    break;
+                case R.id.menu_profile:
+                    Intent mAIntent = new Intent(Home.this,PassengerProfileActivity.class);
+                    startActivity(mAIntent);
+                    break;
+                default:
+                    fragment_change(1);
+            }
+            return true;
+        });
     }
 
 
@@ -32,42 +56,18 @@ public class Home extends AppCompatActivity {
         Fragment activeFragment = getSupportFragmentManager().findFragmentById(R.id.flContent);
         switch (id) {
             case 1:
-                if (!(activeFragment instanceof MapFragment))
+                if (!(activeFragment instanceof HomeFragment)){
+                    fragment = new HomeFragment();
+                }
+                break;
+            case 2:
+                if (!(activeFragment instanceof MapFragment)){
                     fragment = new MapFragment();
-                    Bundle mBundle = new Bundle();
-                    mBundle.putParcelable("user",mUser);
-                    fragment.setArguments(mBundle);
-                    break;
+                }
+                break;
         }
         if (fragment != null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.flContent, fragment, "Home").commit();
         }
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.home_menu,menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.home_passenger:
-                Intent mIntent = new Intent(this,PassengerActivity.class);
-                startActivity(mIntent);
-                overridePendingTransition(R.anim.slide_in,R.anim.stable);
-                return  true;
-            case R.id.home_profile:
-                Intent mOIntent = new Intent(getApplicationContext(),DriverProfileActivity.class);
-                startActivity(mOIntent);
-                return  true;
-            case R.id.home_about:
-                Intent mAIntent = new Intent(getApplicationContext(),AboutActivity.class);
-                startActivity(mAIntent);
-                return  true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 }
